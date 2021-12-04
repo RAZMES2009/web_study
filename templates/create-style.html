@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="createDance">
+  <h1>Добавление стиля танцев</h1>
+  <form method="post" enctype="multipart/form-data">
+    <input type="text" name="name_style" id="name_style" class="form-control" placeholder="Название направления"><br>
+    <input type="text" name="description_style" id="description_style" class="form-control" placeholder="Описание"><br>
+    <input type="file" name="load_pic" id="file" class="form-control" placeholder="Описание"><br>
+    <input type="submit" name="upload" class="btn btn-success" value="Обновить">
+  </form>
+</main>
+
+{% endblock %}

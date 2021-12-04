@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="contS">
+  <table>
+      <tr>
+      <td><div class="day">Понедельник</div></td>
+      {% for i in range(dance_teacher[-1].id) %}
+        {% if time_teacher[i].day_id == 1 %}
+                <td>
+                  <div class="time"><p name="time">{{ time_teacher[i].date_h }}</p></div>
+                  <p name="teacher">{{ dance_teacher[i].name }} {{ dance_teacher[i].second_name }}</p>
+                  <p name="dance">{{ dance_teacher[i].type_dance }}</p>
+                  <a href="/del/{{dance_teacher[i].id}}"><div class="minus"><p name="minus">-</p></div></a>
+                </td>
+        {% endif %}
+      {% endfor %}
+      </tr>
+      <tr>
+      <td><div class="day">Вторник</div></td>
+      {% for i in range(dance_teacher[-1].id) %}
+        {% if time_teacher[i].day_id == 2 %}
+                <td>
+                  <div class="time"><p name="time">{{ time_teacher[i].date_h }}</p></div>
+                  <p name="teacher">{{ dance_teacher[i].name }} {{ dance_teacher[i].second_name }}</p>
+                  <p name="dance">{{ dance_teacher[i].type_dance }}</p>
+                  <a href="/del/{{dance_teacher[i].id}}"><div class="minus"><p name="minus">-</p></div></a>
+                </td>
+        {% endif %}
+      {% endfor %}
+      </tr>
+      <tr>
+      <td><div class="day">Среда</div></td>
+      {% for i in range(dance_teacher[-1].id) %}
+        {% if time_teacher[i].day_id == 3 %}
+                <td>
+                  <div class="time"><p name="time">{{ time_teacher[i].date_h }}</p></div>
+                  <p name="teacher">{{ dance_teacher[i].name }} {{ dance_teacher[i].second_name }}</p>
+                  <p name="dance">{{ dance_teacher[i].type_dance }}</p>
+                  <a href="/del/{{dance_teacher[i].id}}"><div class="minus"><p name="minus">-</p></div></a>
+                </td>
+        {% endif %}
+      {% endfor %}
+      </tr>
+      <tr>
+      <td><div class="day">Четверг</div></td>
+      {% for i in range(dance_teacher[-1].id) %}
+        {% if time_teacher[i].day_id == 4 %}
+                <td>
+                  <div class="time"><p name="time">{{ time_teacher[i].date_h }}</p></div>
+                  <p name="teacher">{{ dance_teacher[i].name }} {{ dance_teacher[i].second_name }}</p>
+                  <p name="dance">{{ dance_teacher[i].type_dance }}</p>
+                  <a href="/del/{{dance_teacher[i].id}}"><div class="minus"><p name="minus">-</p></div></a>
+                </td>
+        {% endif %}
+      {% endfor %}
+      </tr>
+      <tr>
+      <td><div class="day">Пятница</div></td>
+      {% for i in range(dance_teacher[-1].id) %}
+        {% if time_teacher[i].day_id == 5 %}
+                <td>
+                  <div class="time"><p name="time">{{ time_teacher[i].date_h }}</p></div>
+                  <p name="teacher">{{ dance_teacher[i].name }} {{ dance_teacher[i].second_name }}</p>
+                  <p name="dance">{{ dance_teacher[i].type_dance }}</p>
+                  <a href="/del/{{dance_teacher[i].id}}"><div class="minus"><p name="minus">-</p></div></a>
+                </td>
+        {% endif %}
+      {% endfor %}
+      </tr>
+  </table>
+</div>
+{% endblock %}

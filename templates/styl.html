@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="cont">
+  <table>
+    <tr>
+      <td><a href="/about-style/{{style[0].id}}"><img src="../static/images/1.jpg" name="1Styl"><p>{{style[0].name_dance}}</p></a></td>
+      <td><a href="/about-style/{{style[1].id}}"><img src="../static/images/2.jpg" name="2Styl"><p>{{style[1].name_dance}}</p></a></td>
+      <td><a href="/about-style/{{style[2].id}}"><img src="../static/images/3.jpg" name="3Styl"><p>{{style[2].name_dance}}</p></a></td>
+    </tr>
+    <tr>
+      <td><a href="/about-style/{{style[3].id}}"><img src="../static/images/4.jpg" name="4Styl"><p>{{style[3].name_dance}}</p></a></td>
+      <td><a href="/about-style/{{style[4].id}}"><img src="../static/images/5.jpg" name="5Styl"><p>{{style[4].name_dance}}</p></a></td>
+      <td><a href="/about-style/{{style[5].id}}"><img src="../static/images/6.jpg" name="6Styl"><p>{{style[5].name_dance}}</p></a></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="/about-style/{{style[6].id}}"><img src="../static/images/7.jpg" name="6Styl"><p>{{style[6].name_dance}}</p></a></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+{% endblock %}

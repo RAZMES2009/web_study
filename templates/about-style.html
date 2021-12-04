@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main name="mainAboutStyle">
+    <img img src="../static/images/1.jpg">
+    {% set p = i %}
+    <h1 name="nameStyle">{{style[p].name_dance}}</h1>
+    <p name="descriptionStyle">{{style[p].description}}</p>
+</main>
+
+{% endblock %}

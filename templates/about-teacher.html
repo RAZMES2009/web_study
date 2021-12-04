@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table name="tableTeacher">
+    <tr name="rowTeacher">
+        {% for i in range(teacher[-1].id) %}
+            {% if i < 3 %}
+                <td name="collTeacher">
+                    <img src="../static/images/1t.jpg">
+                    <p>{{ teacher[i].name }} {{ teacher[i].second_name }}</p>
+                </td>>
+            {% endif %}
+        {% endfor %}
+    </tr>
+    <tr name="rowTeacher">
+        {% for i in range(teacher[2].id, teacher[-1].id) %}
+            {% if i < 6 %}
+                <td name="collTeacher">
+                    <img src="../static/images/1t.jpg">
+                    <p>{{ teacher[i].name }} {{ teacher[i].second_name }}</p>
+                </td>>
+            {% endif %}
+        {% endfor %}
+    </tr>
+    <tr name="rowTeacher">
+        {% for i in range(teacher[5].id, teacher[-1].id) %}
+            {% if i < 7 %}
+                <td name="collTeacher">
+                    <img src="../static/images/1t.jpg">
+                    <p>{{ teacher[i].name }} {{ teacher[i].second_name }}</p>
+                </td>>
+            {% endif %}
+        {% endfor %}
+    </tr>
+</table>
+
+{% endblock %}

@@ -1,0 +1,343 @@
+*{
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Шапка */
+.head{
+  width: 100%;
+  height: 100px;
+  background-color: #383838;
+}
+
+img[name="logo"]{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+
+  top: -10px;
+  left: -10px;
+}
+
+.head button{
+  width: 140px;
+}
+
+button[name="с_rasp"]{
+  position: absolute;
+
+  top: 30px;
+  left: 210px;
+}
+
+button[name="rasp"]{
+  position: absolute;
+
+  top: 30px;
+  left: 360px;
+}
+
+button[name="style"]{
+  position: absolute;
+
+  top: 30px;
+  left: 510px;
+}
+
+button[name="abon"]{
+  position: absolute;
+
+  top: 30px;
+  left: 660px;
+}
+
+button[name="prep"]{
+  position: absolute;
+
+  top: 30px;
+  left: 810px;
+}
+
+button[name="studio"]{
+  position: absolute;
+
+  top: 30px;
+  left: 960px;
+}
+
+p[name="number"]{
+  position: absolute;
+  top: 25px;
+  left: 1180px;
+
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+/* стили */
+.cont{
+  width: 100%;
+  height: 1000px;
+}
+
+.cont tr{
+  left: 550px;
+}
+
+.cont table{
+  position: absolute;
+  left: 240px;
+}
+
+.cont table td{
+  padding: 60px;
+}
+
+.cont img{
+  width: 200px;
+  height: 230px;
+}
+
+.cont p{
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+}
+
+/* Расписание */
+.contS{
+  width: 100%;
+  height: 800px;
+}
+
+.contS .day{
+  width: 130px;
+  height: 26px;
+
+  text-align: center;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #383838;
+}
+
+.contS table{
+  position: absolute;
+  left: 20px;
+  border-collapse: collapse;
+  border: 2px solid white;
+}
+
+.contS table td{
+  padding: 50px;
+}
+
+.contS table tr{
+  border: 1px solid grey;
+}
+
+.time{
+  position: relative;
+  height: 25px;
+  width: 35px;
+  border-radius: 15px;
+
+  background: #383838;
+}
+
+p[name="time"]{
+  position: relative;
+  top: 3px;
+  font-size: 12px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+p[name="dance"]{
+  position: relative;
+  left: 50px;
+  top: -50px;
+}
+
+p[name="teacher"]{
+  position: relative;
+  left: 20px;
+  color: #CC7722;
+}
+
+.display-4{
+  overflow: hidden;
+
+}
+
+.pricing-header{
+  position: absolute;
+  top: 150px;
+  left: 370px;
+}
+
+.row{
+  position: absolute;
+  top: 320px;
+}
+
+.minus{
+  position: relative;
+  left: 100px;
+  top: -90px;
+  overflow-y: hidden;
+  width: 25px;
+  height: 15px;
+  border-radius: 15px;
+  background: #ff0000;
+}
+
+p[name="minus"]{
+  position: relative;
+  left: 9px;
+  top: -6px;
+
+  color: #FFFFFF;
+}
+
+/* Создание расписания */
+.createRasp{
+  height: 800px;
+  width: 100%;
+}
+
+.createRasp form{
+  height: 800px;
+  width: 100%;
+}
+
+.createRasp h1{
+  position: absolute;
+  width: 550px;
+  left: 520px;
+  font-size: 36px;
+  overflow-y: hidden;
+}
+
+.createRasp input{
+  position: relative;
+  left: 420px;
+  top: 100px;
+  width: 550px;
+  overflow-y: hidden;
+}
+
+/* Создание танцев */
+
+.createDance{
+  height: 800px;
+  width: 100%;
+}
+
+.createDance form{
+  height: 800px;
+  width: 100%;
+}
+
+.createDance h1{
+  position: absolute;
+  width: 550px;
+  left: 520px;
+  font-size: 36px;
+  overflow-y: hidden;
+}
+
+.createDance input[name="name_style"]{
+  position: relative;
+  left: 420px;
+  top: 100px;
+  width: 550px;
+  overflow-y: hidden;
+}
+
+.createDance input[name="description_style"]{
+  position: relative;
+  left: 420px;
+  top: 100px;
+  width: 550px;
+  height: 300px;
+  overflow-y: hidden;
+}
+
+.createDance input[name="upload"]{
+  position: relative;
+  left: 420px;
+  top: 100px;
+  width: 550px;
+  overflow-y: hidden;
+}
+
+.createDance input[name="load_pic"]{
+  position: relative;
+  left: 420px;
+  top: 100px;
+  width: 550px;
+  height: 100px;
+  overflow-y: hidden;
+}
+
+/* Про танец */
+main[name="mainAboutStyle"]{
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+
+main[name="mainAboutStyle"] img{
+  position: relative;
+  left: 100px;
+  top: 50px;
+  width: 250px;
+  height: 350px;
+}
+
+h1[name="nameStyle"]{
+  position: relative;
+  left: 450px;
+  top: -310px;
+
+  text-align: left;
+  font-size: 36px;
+}
+
+p[name="descriptionStyle"]{
+  position: relative;
+  left: 450px;
+  top: -280px;
+  width: 790px;
+
+  text-align: left;
+  font-size: 24px;
+}
+
+/* Преподователи */
+table[name="tableTeacher"]{
+  width: 100%;
+  height: 650px;
+
+  overflow-y: hidden;
+}
+tr[name="rowTeacher"]{
+  padding: 20px 10px;
+}
+
+td[name="collTeacher"] > img{
+  position: relative;
+
+  width: 150px;
+  height: 150px;
+
+  border-radius: 100px;
+}
+
+td[name="collTeacher"] > p{
+  position: relative;
+  font-size: 24px;
+}

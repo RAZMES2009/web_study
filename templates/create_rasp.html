@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="createRasp">
+  <h1>Создание расписания</h1>
+  <form method="post">
+    <input type="text" name="name" id="name" class="form-control" placeholder="Введите имя"><br>
+    <input type="text" name="second_name" id="second_name" class="form-control" placeholder="Введите фамилию"><br>
+    <input type="text" name="type_dance" id="type_dance" class="form-control" placeholder="Направление танцев"><br>
+    <input type="text" name="date_day" id="date_dat" class="form-control" placeholder="День недели"><br>
+    <input type="time" name="date_h" id="date_h" class="form-control" placeholder="Начало занятий час"><br>
+    <input type="submit" class="btn btn-success" value="Обновить">
+  </form>
+</main>
+
+{% endblock %}
